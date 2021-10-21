@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 08</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h2>The Employee Management Application</h1>
+    </header>
+
+    <div class="container">
+        <h3> Add Employee</h2>
+            <form id="form">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="employeeName">Name:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="employeeName" placeholder="Your name..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="employeeTitle">Title:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="employeeTitle" placeholder="Your title..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="employeeExtension">Extension:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="employeeExtension" placeholder="Your extension..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="button" id="submit" value="Add">
+                </div>
+            </form>
+    </div>
+
+    <p class="showEmployees">
+        Showing <span id="employees"></span> Employees
+    </p>
+    <table id="display">
+        <tr>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Extension</th>
+            <th type="button"></th>
+        </tr>
+    </table>
+    <script src="js/employee-management.js "></script>
+</body>
+
+</html>
